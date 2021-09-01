@@ -84,8 +84,20 @@ switch(month){
   - `Salary > 50000` tax is 30 %
 */
 
-
-
+let salary = prompt('enter the salary');
+switch(true){
+	case (salary <= 20000):
+		alert(`your in hand salary is ${salary - (10 / 100) * salary}`);
+		break;
+	case(salary <= 40000):
+		alert(`your in hand salary is ${salary - (20 / 100) * salary}`);
+		break;
+	case(salary > 50000):
+		alert(`your in hand salary is ${salary - (30 / 100) * salary}`);
+		break;
+	default:
+		break;
+}
 //  if..else vs switch
 
 /* 8.
