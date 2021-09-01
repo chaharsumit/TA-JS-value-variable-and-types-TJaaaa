@@ -26,7 +26,7 @@ alert('I\'m ' + firstName + ' ' + lastName + ' of Winterfall');
 */
 
 alert(`I am ${username} and my bio is ${bio}`);
-alert(`I\'m ${firstName} ${lastName} of Winterfall`);
+alert(`I'm ${firstName} ${lastName} of Winterfall`);
 
 let amount = 200;
 const taxPercent = 10;
@@ -38,7 +38,8 @@ const taxPercent = 10;
   - Above message should be in two lines
 */
 
-alert(`the total amount is ${amount} \n the tax amount is ${(amount * taxPercent) / 100}`);
+alert(`the total amount is ${amount}
+the tax amount is ${(amount * taxPercent) / 100}`);
 
 /* Use double quote and escape character:
   - Alert a message saying `The total amount is [amount]
