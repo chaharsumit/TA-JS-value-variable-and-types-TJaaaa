@@ -6,6 +6,8 @@
  * [ ] Finally, check the amount against your bank account balance to see if you can afford it or not.
 */
 
+// your code goes here
+
 const SPENDING_THRESHOLD = 200;
 const TAX_RATE = 0.08;
 const PHONE_PRICE = 99.99;
@@ -13,6 +15,15 @@ const ACCESSORY_PRICE = 9.99;
 
 var bank_balance = 303.91;
 var amount = 0;
-// your code goes here
+
+while(amount <= bank_balance){
+  amount += PHONE_PRICE;
+  if(amount < SPENDING_THRESHOLD){
+    amount += ACCESSORY_PRICE;
+  }
+}
+amount += amount * TAX_RATE;
+alert(`the total amount after tax is $${amount}`);
+amount > bank_balance ? alert(`You can't afford to buy this`) : alert(`You can afford to buy this`);
 
 // ⛑ Answer of the above will `$334.76`.
